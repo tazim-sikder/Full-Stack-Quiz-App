@@ -8,7 +8,8 @@ export default function Center(props) {
       direction="column"
       alignItems="center"
       justifyContent="center"
-      sx={{minHeight:'100vh'}}>
+      sx={{ minHeight: "100vh" }}
+    >
       <Grid item xs={1}>
         {props.children}
       </Grid>

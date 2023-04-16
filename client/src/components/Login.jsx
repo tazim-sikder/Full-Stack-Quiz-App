@@ -41,8 +41,7 @@ export default function Login() {
           <Typography variant="h4" sx={{ my: 3 }}>
             Quiz App
           </Typography>
-          <Box
-            sx={{
+          <Box sx={{
               "& .MuiTextField-root": {
                 margin: 1,
                 width: "90%",
@@ -50,15 +49,13 @@ export default function Login() {
             }} >
             <form noValidate autoComplete="off" onSubmit={login}>
               <TextField
-                label="Email"
-                name="email"
+                label="Email" name="email"
                 variant="outlined"
                 onChange={handleInputChange}
                 value={values.email}
                 {...(errors.email && { error: true, helperText: errors.email })}/>
               <TextField
-                label="Name"
-                name="name"
+                label="Name" name="name"
                 variant="outlined"
                 onChange={handleInputChange}
                 value={values.name}
@@ -67,10 +64,7 @@ export default function Login() {
                 sx={{ width: "90%" }}
                 type="submit"
                 variant="contained"
-                size="large"
-              >
-                Start
-              </Button>
+                size="large"> Start </Button>
             </form>
           </Box>
         </CardContent>
